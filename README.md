@@ -8,5 +8,20 @@ For this purpose, i developed AI model for detection and applied tracking and de
 
 ## Dataset
 
-Dataset provided by company.Dataset consist of 4889 pearbags images and Provided images (videos) which contains fruit bags. //
+Dataset provided by company.Dataset consist of 4889 pearbags images and Provided images (videos) which contains fruit bags.
 For applying tracking and deduplication methodology, i combined 4889 sequentially cropped images that we used camera dataset and turned them into a video by using their frame rates.
+
+## Models for Detection
+
+- For detection of Pearbags , 4 different models are used.
+- Yolo8\
+- Yolo11\
+- Yolo8-CBAM-BiFPN\
+- Yolo8-CBAM
+
+## Web App Details
+### Features
+Selected Model from Dropdown Menu\
+Selected pearbags video for Detection and tracking
+
+- Output : Detected and Counted Pearbags video and Evaluation metrics of selected model
