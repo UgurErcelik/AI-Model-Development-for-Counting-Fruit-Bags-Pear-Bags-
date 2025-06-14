@@ -1,0 +1,13 @@
+train: C:/Users/dnslab_fox/Ugur/PearBagsYolo/train/images
+val: C:/Users/dnslab_fox/Ugur/PearBagsYolo/valid/images
+test: C:/Users/dnslab_fox/Ugur/PearBagsYolo/test/images
+
+nc: 1
+names: ['pearbags']
+
+roboflow:
+  workspace: ugur-jeif9
+  project: cocotojson-xmdvw
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ugur-jeif9/cocotojson-xmdvw/dataset/1
