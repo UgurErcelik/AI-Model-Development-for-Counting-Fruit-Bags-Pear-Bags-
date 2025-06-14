@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Colors {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="body flex-grow-1 px-3">
+    <div class="container-lg">
+      <div class="card mb-4">
+        <div class="card-header">Yolov8-CBAM-BiFPN</div>
+        <div class="card-body">
+          <div class="row">
+
+            <div class="text-center my-4">
+              <img src="{{ url_for('static', filename='assets/img/yolov8cbambifpn.png') }}" alt="Detection Result" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+              <p class="mt-3 text-dark fw-bold"><b>BiFPN :</b> <br>
+
+
+A BiFPN, or Weighted Bi-directional Feature Pyramid Network, is a type of feature pyramid network which allows easy and fast multi-scale feature fusion.
+
+It incorporates the multi-level feature fusion idea from FPN, PANet and NAS-FPN that enables information to flow in both the top-down and bottom-up directions, 
+while using regular and efficient connections. It also utilizes a fast normalized fusion technique.
+
+
+
+                </p>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <!-- Plugins and scripts required by this view-->
+  <script src="/static/assets/vendors/@coreui/utils/js/coreui-utils.js"></script>
+  <script src="/static/assets/js/colors.js"></script>
+  <script>
+  </script>
+
+{% endblock javascripts %}

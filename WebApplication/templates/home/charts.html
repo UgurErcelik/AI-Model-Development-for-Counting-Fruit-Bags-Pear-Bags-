@@ -1,0 +1,62 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Charts {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+  <link href="/static/assets/vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
+
+{% endblock stylesheets %}
+
+{% block content %}    
+
+  <div class="body flex-grow-1 px-3">
+    <div class="container-lg">
+      <div class="card mb-4">
+        <div class="card-header">Project Introduction</div>
+        <div class="card-body">
+          <div class="row">
+
+            <div class="text-center my-4">
+              <img src="{{ url_for('static', filename='assets/img/ProjectProposal.jpeg') }}" alt="Project Proposal" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+              <p class="mt-3 text-dark fw-bold">
+<b>Project Title</b> <br>
+
+배봉지(과일봉지) 숫자 카운팅 AI모델 개발 <br>
+AI Model Development for Counting Fruit Bags (Pear Bags) <br>
+
+<b>Project Description</b> <br>
+
+In pear orchards, fruit bags are used to improve pear quality. 
+Every year, in collaboration with disaster insurance companies, the number of fruit bags is counted in spring and after natural disasters (e.g., typhoons) to assess the level of damage. 
+This project aims to address this issue by developing a vision AI model that can automatically count fruit bags from images and videos collected through cameras and eliminating the need for manual counting.  
+Also , this could reduce manual labor costs and improve accuracy in agriculture and disaster insurance by automating fruit bag counting
+
+Input : Provided images (videos) which contains fruit bags. Images may show the same fruit bag multiple times due to different shooting angles
+Output : The Counted and detected fruit bags on image . 
+Functions : Develop a vision AI model that must detect and count the fruit  bags without duplication
+
+
+
+                </p>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendors/chart.js/js/chart.min.js"></script>
+  <script src="/static/assets/vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
+  <script src="/static/assets/js/charts.js"></script>
+  <script>
+  </script>
+
+{% endblock javascripts %}

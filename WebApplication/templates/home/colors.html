@@ -1,0 +1,52 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Colors {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="body flex-grow-1 px-3">
+    <div class="container-lg">
+      <div class="card mb-4">
+        <div class="card-header">Yolov8-CBAM</div>
+        <div class="card-body">
+          <div class="row">
+
+            <div class="text-center my-4">
+              <img src="{{ url_for('static', filename='assets/img/yolov8cbam.png') }}" alt="Detection Result" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+              <p class="mt-3 text-dark fw-bold"><b>CBAM(Convolutional Block Attention Module) :</b> <br>
+
+                It adds spatial and channel-wise attention, improving the model focus on important features while ignoring noise.<br>
+                
+                CBAM is applied after each upsample and fusion step, improving the representation before passing it further.<br>
+                
+                Channel Attention <br>
+                – Focuses on the important parts(What)<br>
+                Spatial Attention <br>
+                – Focuses on the important sides(Where)
+
+
+                </p>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <!-- Plugins and scripts required by this view-->
+  <script src="/static/assets/vendors/@coreui/utils/js/coreui-utils.js"></script>
+  <script src="/static/assets/js/colors.js"></script>
+  <script>
+  </script>
+
+{% endblock javascripts %}
