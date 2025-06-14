@@ -14,9 +14,9 @@ For applying tracking and deduplication methodology, i combined 4889 sequentiall
 ## Models for Detection
 
 - For detection of Pearbags , 4 different models are used.
-- Yolo8\
-- Yolo11\
-- Yolo8-CBAM-BiFPN\
+- Yolo8
+- Yolo11
+- Yolo8-CBAM-BiFPN
 - Yolo8-CBAM
 
 ## Web App Details
@@ -25,3 +25,7 @@ Selected Model from Dropdown Menu\
 Selected pearbags video for Detection and tracking
 
 - Output : Detected and Counted Pearbags video and Evaluation metrics of selected model
+
+## Running App
+
+- Clone the repository and open on visual studio code and python run.py
